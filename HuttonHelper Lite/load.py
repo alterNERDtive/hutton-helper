@@ -118,7 +118,7 @@ def plugin_app(parent):
     Canonn=whiteList(parent)
     Canonn.fetchData()
 
-    frame = this.frame = tk.Frame(parent)
+    frame = this.frame = tk.Frame()
     frame.columnconfigure(0, weight=1)
 
     table = tk.Frame(frame)
@@ -166,7 +166,7 @@ def plugin_app(parent):
     # Uncomment the next line to thrash the status line shortly after startup:
     # frame.after(5000, _thrash, EVENT_STATUS_FORMATS.values())
 
-    return frame
+    return None
 
 
 def _thrash(remain):
